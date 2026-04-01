@@ -6,7 +6,7 @@ export async function onRequestPost(context) {
     const db = context.env.DB; // D1 binding
 
     await db.prepare(
-        "INSERT INTO stackmemebers (name, registered_by) VALUES (?, ?)"
+        "INSERT INTO registrations (name, registered_by) VALUES (?, ?)"
     ).bind(name, registered_by).run();
 
     return new Response("Registration successful!");
