@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+    <style>
+        body {
+            font-family: "Comic Mono", cursive;
+            margin: 40px;
+            background-color: #ddd8d3;
+            color: #0e142b;
+        }
+        .widget {
+            border: 4px solid #ffffff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 15px;
+            background-color: #ece2ce;
+        }
+        .footer-button-bkd {
+            border: 4px solid #ffffff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 15px;
+            background-color: #faa1e7;
+            cursor: pointer;
+        }
+        .footer-button-cb {
+            border: 4px solid #ffffff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 15px;
+            background-color: #a9d7ed;
+            cursor: pointer;
+        }
+        .footer-button-gh {
+            border: 4px solid #ffffff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 15px;
+            background-color: #ededed;
+            cursor: pointer;
+        }
+        .pulsate {
+            animation: pulse 1s infinite;
+            color: gold;
+            text-shadow: black 1px 1px 1px;
+            rotate: -7deg;
+            position: absolute;
+            top: 65px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+<h1>The Stack&trade;</h1>
+<p id="randomString" class="pulsate"></p>
+
+<script>
+    const strings = [
+        "Your favorite cult that does nothing",
+        "like on Stack Overflow?",
+        "Moderately exciting!",
+        "1337",
+        "Not on Steam!",
+        "Now with members!",
+        "Legal in Illinois!",
+        "Ceci n'est pas une cult!",
+        "P is not NP!",
+        "128% Hyperbole!",
+        "pneumonoultramicroscopicsilicovolcanoconiosis!",
+        "Stackers gonna stack",
+        "'S' is for Stack!",
+        "All paths lead to The Stack!",
+        "Probably peanut free!",
+    ]
+    const randomString = strings[Math.floor(Math.random() * strings.length)];
+
+    document.getElementById('randomString').innerText = `${randomString}`;
+</script>
+
+<div class="widget">
+    <h2><s>Indoctrinate</s> Invite a member:</h2>
+    <a href="/form.html"><button class="widget">Begin Process</button></a>
+</div>
+
+<footer>
+    <a href="https://bkd.lol"><button class="footer-button-bkd">Made with &lt;3 by bkd</button></a>
+    <a href="https://codeberg.org/bkd/thestacksite"><button class="footer-button-cb">Source Code (Codeberg)</button></a>
+    <a href="https://github.com/bakedb/thestacksite"><button class="footer-button-gh">Source Code (GitHub)</button></a>
+</footer>
+</body>
+
+</html>

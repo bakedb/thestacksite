@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        font-family: "Comic Mono", cursive;
+        margin: 40px;
+        background-color: #ddd8d3;
+        color: #0e142b;
+    }
+</style>
+<body>
+
+<form action="/api/register" method="POST">
+    <label>Your name:</label>
+    <input name="registered_by" required>
+
+    <label>Person to register:</label>
+    <input name="name" required>
+
+    <button type="submit">Register</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+name = "thestacksite"
+compatibility_date = "2026-03-31"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "stackmembers"
+database_id = "62d5744d-bca5-446f-ac56-50baf45aa645"
